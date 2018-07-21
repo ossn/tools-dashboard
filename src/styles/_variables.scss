@@ -1,2 +1,14 @@
+@import './_colors.scss';
 // fonts
 $proxima: 'Montserrat', 'Muli', sans-serif;
+
+
+// setup defaults
+$text_typography: $proxima;
+$text_color: $col_dark_gray;
+
+$title_typography: $proxima;
+$title_color: $col_charcoal;
+
+$link_color: $col_cambridge_blue;
+$link_typography: $proxima;

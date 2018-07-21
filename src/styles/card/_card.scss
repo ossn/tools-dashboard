@@ -1,5 +1,50 @@
+@import './../_colors.scss';
+
 .card {
-  max-width: 300px;
-  border: 1px solid black;
-  padding: 10px;
+  max-width: 340px;
+  // border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px $col_antiflash_white;
+  border-radius: 6px;
+  padding: 0;
+  font-family: $proxima;
+  background-color: $col_white;
+  padding-bottom: 30px;
+
+  &__header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: $col_antiflash_white-transparent;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__title {
+    @extend %title;
+    padding-bottom: 15px;
+    // border: 1px dashed black;
+  }
+
+  &__link {
+    @extend %link;
+    text-decoration: none;
+    margin-top: 20px;
+    // border: 1px dashed black;
+
+    &::before {
+      content: '\1F517';
+    }
+
+    &:hover  {
+      text-decoration: underline;
+    }
+  }
+
+  &__body {
+    @extend %text;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
