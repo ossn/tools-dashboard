@@ -26,14 +26,6 @@ export default class Card extends React.Component  {
     let footerPicture = <div></div>;
     if (this.props.picture) {
       const bundle = this.props.picture;
-      console.log(bundle);
-
-      let icon;
-      try {
-
-      } catch (e) {
-        console.log(e);
-      }
 
       footerPicture =
         <img
@@ -42,9 +34,6 @@ export default class Card extends React.Component  {
           className="card__footer-picture"
         />
     }
-
-
-
 
     return(
       <div className="card">
