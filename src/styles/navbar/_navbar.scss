@@ -1,0 +1,16 @@
+.navigation-bar {
+  background: $col_antiflash_white;
+  box-shadow: 0px 2px 10px 5px rgba(0,0,0, 0.1);
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__brand-text {
+    color: $col_white;
+    background-color: $col_black;
+    font-family: $zilla;
+    margin-top: 2px;
+    display: inline-block;
+  }
+}
