@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchTool from './../components/search-tool';
+import UserProfileTeaser from './../components/user-profile-teaser';
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
 import mozillaLogo from './../images/Mozilla_logo.svg';
 
@@ -11,7 +12,7 @@ export default class NavigationBar extends React.Component  {
       <Navbar collapseOnSelect className="navigation-bar">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand" className="navigation-bar__logo-link" >
+            <a href="/" className="navigation-bar__logo-link" >
                 <img src={mozillaLogo} alt="mozilla" className="navigation-bar__logo"/>
                 <span className="navigation-bar__brand-text"> Tools Dashboard </span>
             </a>
@@ -24,7 +25,7 @@ export default class NavigationBar extends React.Component  {
               <SearchTool />
             </NavItem>
             <NavItem eventKey={2} href="#">
-              Link Right
+              <UserProfileTeaser />
             </NavItem>
           </Nav>
         </Navbar.Collapse>
