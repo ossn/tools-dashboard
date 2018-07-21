@@ -36,11 +36,17 @@ export default class ToolsDashboard extends React.Component  {
   render() {
 
     const content = contentData.map((item, i)=>{
+
+      const iconBundle = {
+        alt: item.icon.alt,
+        src: item.icon.src,
+      }
+
       return (
         <Card title={item.title}
               link={item.link}
               body={item.body}
-              picture={item.icon}
+              picture={iconBundle}
               key={i}
         />
       );

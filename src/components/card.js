@@ -24,11 +24,20 @@ export default class Card extends React.Component  {
 
 
     let footerPicture = <div></div>;
-    if (this.props.footerPicture) {
-      const bundle = this.props.footerPicture;
+    if (this.props.picture) {
+      const bundle = this.props.picture;
+      console.log(bundle);
+
+      let icon;
+      try {
+
+      } catch (e) {
+        console.log(e);
+      }
+
       footerPicture =
         <img
-          src={bundle.drc}
+          src={bundle.src ? bundle.src : ''}
           alt={bundle.alt || ''}
           className="card__footer-picture"
         />
