@@ -16,8 +16,8 @@ export default class ToolsDashboard extends React.Component  {
     // write the  media queries and appearence settings
     const sizes = [
       {columns: 1, gutter: 10},
-      {mq: '768px', columns: 2, gutter: 20},
-      {mq: '1024px', columns: 3, gutter: 40}
+      {mq: '768px', columns: 2, gutter: 15},
+      {mq: '1024px', columns: 3, gutter: 20}
     ];
 
     const bricks = Bricks({

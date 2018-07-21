@@ -1,6 +1,9 @@
 // initialize
-@import './_variables.scss';
 @import './_colors.scss';
+@import './_variables.scss';
 
 // components
+@import './title/_title.scss';
+@import './text/_text.scss';
+@import './link/_link.scss';
 @import './card/_card.scss';
