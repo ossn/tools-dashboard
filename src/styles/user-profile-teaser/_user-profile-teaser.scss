@@ -1,0 +1,25 @@
+.user-profile-teaser {
+  width: 42px;
+  padding-top: 3px;
+  border-radius: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: $col_light_carmine_pink;
+    z-index: 2;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 0;
+    left: 70%;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+
+  }
+}
