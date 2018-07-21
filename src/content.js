@@ -8,7 +8,10 @@ const content = [
     Sit ut sale nonumes legendos, dicam homero soluta at mei.Sed ei tota fabulas
      vivendo, justo molestie vim in.
     Sit ut sale nonumes legendos, dicam homero soluta at mei.`,
-    icon: '/src/images/sample.svg'
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
   },
   {
     title: 'this is a title 2',
@@ -16,7 +19,10 @@ const content = [
     body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
     docendi cotidieque.`,
-    icon: '/src/images/sample.svg'
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
   },
   {
     title: 'this is a title 3',
@@ -29,7 +35,10 @@ const content = [
     Sit ut sale nonumes legendos, dicam homero soluta at mei. Sed ei tota
     fabulas vivendo, justo molestie vim in.
     Sit ut sale nonumes legendos, dicam homero soluta at mei.`,
-    icon: '/src/images/sample.svg'
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
   },
   {
     title: 'this is a title 4',
@@ -38,7 +47,10 @@ const content = [
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
     docendi cotidieque. Sed ei tota fabulas vivendo, justo molestie vim in.
     Sit ut sale nonumes legendos, dicam homero soluta at mei.`,
-    icon: '/src/images/sample.svg'
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
   },
   {
     title: 'this is a title 5',
@@ -47,9 +59,11 @@ const content = [
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
     docendi cotidieque. Sed ei tota fabulas vivendo, justo molestie vim in.
     Sit ut sale nonumes legendos, dicam homero soluta at mei. Sed ei tota
-    fabulas vivendo, justo molestie vim in.
-    `,
-    icon: '/src/images/sample.svg'
+    fabulas vivendo, justo molestie vim in.`,
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
   },
 ]
 
