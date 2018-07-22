@@ -10,20 +10,20 @@
   background-color: $col_white;
   padding-bottom: 30px;
 
-  @media screen and (min-width: $tablet) {
-    max-width: 320px;
-  }
+  &:hover {
+    .card__header {
+      background: linear-gradient(150deg,
+                                  $col_auro_metal_saurus,
+                                  $col_charcoal 70%
+                                  );
+      .card__title {
+        color: $col_white;
+      }
 
-  @media screen and (min-width: $tablet-large) {
-    max-width: 300px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 340px;
-  }
-
-  @media screen and (min-width: $desktop-large) {
-    max-width: 380px;
+      a:hover {
+        color: $col_white;
+      }
+    }
   }
 
   &__header {
@@ -34,16 +34,6 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
-
-    &:hover {
-      background: linear-gradient(150deg,
-                                  $col_auro_metal_saurus,
-                                  $col_charcoal 70%
-                                  );
-      .card__title {
-        color: $col_white;
-      }
-    }
   }
 
   &__title {
@@ -52,14 +42,18 @@
     // border: 1px dashed black;
   }
 
+
   &__link {
     @extend %link;
     text-decoration: none;
     margin-top: 20px;
-    // border: 1px dashed black;
+    position: relative;
+    padding-left: 20px;
 
     &::before {
       content: '\1F517';
+      position: absolute;
+      left: 0;
     }
 
     &:hover  {
@@ -87,5 +81,21 @@
   &__footer-picture {
     max-height: 30px;
     width: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: $tablet-large) {
+    max-width: 300px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 340px;
+  }
+
+  @media screen and (min-width: $desktop-large) {
+    max-width: 380px;
   }
 }
