@@ -6,12 +6,18 @@
   @extend %text--small;
 
   width: 100%;
+  margin-top: $distance_from_bottom;
   background-color: $col_charcoal;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
   padding-top: 35px;
   padding-bottom: 30px;
+
+  &__container {
+    @extend %contained;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
 
   &__logo-wrapper {
     max-width: 100px;

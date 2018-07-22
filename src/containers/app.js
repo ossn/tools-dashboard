@@ -8,9 +8,11 @@ export default class App extends React.Component  {
   render() {
     return(
       <div className="app">
-        <NavigationBar />
-        <ToolsDashboard />
-        <Footer />
+          <NavigationBar />
+          <div className="app__container">
+            <ToolsDashboard />
+          </div>
+          <Footer />
       </div>
     );
   }
