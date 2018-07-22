@@ -32,7 +32,15 @@
     max-width: 980px;
   }
 
-  @media screen and (min-width: $desktop-large) {
+  @media screen and (min-width: $desktop-medium) {
     max-width: 1100px;
+  }
+
+  @media screen and (min-width: $desktop-large) {
+    max-width: 1340px;
+  }
+
+  @media screen and (min-width: $desktop-extra-large) {
+    max-width: 1800px;
   }
 }
