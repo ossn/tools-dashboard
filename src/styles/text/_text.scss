@@ -2,4 +2,16 @@
 .text  {
   font-family: $text_typography;
   color: $text_color;
+
+  &--white {
+    color: $col_white;
+  }
+
+  &--small {
+    font-size: 11px;
+  }
+
+  &--right {
+    text-align: right;
+  }
 }
