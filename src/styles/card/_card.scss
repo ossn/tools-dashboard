@@ -77,15 +77,15 @@
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 320px;
+    max-width: 310px;
   }
 
   @media screen and (min-width: $tablet-large) {
     max-width: 300px;
   }
 
-  @media screen and (min-width: $desktop) {
-    max-width: 340px;
+  @media screen and (min-width: $desktop+10px) {
+    max-width: 330px;
   }
 
   @media screen and (min-width: $desktop-large) {

@@ -46,7 +46,8 @@
     order: 3;
     margin-top: 20px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
+    width: 100%;
   }
 
   &__user-profile {
@@ -64,17 +65,12 @@
     &__search {
       order: 2;
       margin-top: 0;
-      margin-right: 20px;
+      margin-right: 40px;
+      width: 270px;
     }
 
     &__user-profile {
       order: 3;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    &__search {
-      margin-right: 40px;
     }
   }
 }
