@@ -18,7 +18,8 @@ export default class Card extends React.Component  {
     let  link = <div></div>;
     if (this.props.link) {
       link = <div className="link card__link-wrapper">
-               <a className="link card__link" href={card_link}> {card_link} </a>
+              <span className="lnr lnr-link"></span>
+              <a className="link card__link" href={card_link}> {card_link} </a>
              </div>
     }
 

@@ -17,6 +17,9 @@ export default class SearchTool extends React.Component  {
       <div className="search-tool__wrapper">
         <input type="text" placeholder="Search tool" className="search-tool"
           value={this.state.searchString || ''} onChange={this.updateStr}/>
+          <div className="search-tool__icon">
+            <span className="lnr lnr-magnifier"></span>
+          </div>
       </div>
     );
   }

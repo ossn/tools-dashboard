@@ -11,16 +11,12 @@
   padding-bottom: 30px;
 
   &:hover {
-    .card__header {
-      background: linear-gradient(150deg,
-                                  $col_auro_metal_saurus,
-                                  $col_charcoal 70%
-                                  );
-      .card__title {
-        color: $col_white;
-      }
+    opacity: 1;
 
-      a:hover {
+    .card__header {
+      background: linear-gradient(150deg, $col_auro_metal_saurus, $col_charcoal 70%);
+
+      .card__title {
         color: $col_white;
       }
     }
@@ -29,7 +25,7 @@
   &__header {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background-color: $col_antiflash_white-transparent;
+    background: $col_antiflash_white-transparent;
     padding-top: 25px;
     padding-bottom: 20px;
     padding-left: 30px;
@@ -39,26 +35,23 @@
   &__title {
     @extend %title;
     padding-bottom: 15px;
-    // border: 1px dashed black;
   }
 
+  &__link-wrapper:hover {
+    color: $col_white;
+
+    a {
+      color: $col_white;
+      text-decoration: none;
+    }
+
+  }
 
   &__link {
     @extend %link;
     text-decoration: none;
     margin-top: 20px;
     position: relative;
-    padding-left: 20px;
-
-    &::before {
-      content: '\1F517';
-      position: absolute;
-      left: 0;
-    }
-
-    &:hover  {
-      text-decoration: underline;
-    }
   }
 
   &__body {
