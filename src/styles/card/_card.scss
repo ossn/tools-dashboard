@@ -17,6 +17,16 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
+
+    &:hover {
+      background: linear-gradient(150deg,
+                                  $col_auro_metal_saurus,
+                                  $col_charcoal 70%
+                                  );
+      .card__title {
+        color: $col_white;
+      }
+    }
   }
 
   &__title {
