@@ -1,6 +1,37 @@
 .app {
+
+  display: flex;
+  flex-wrap: wrap;
   background: linear-gradient(150deg,
                               $col_platinum,
                               $col_pastel_blue 70%
                               );
+
+  &__container {
+    width: 100%;
+  }
+}
+
+%contained,
+.contained {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 260px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: $tablet-large) {
+    max-width: 740px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 980px;
+  }
+
+  @media screen and (min-width: $desktop-large) {
+    max-width: 1100px;
+  }
 }

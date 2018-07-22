@@ -2,6 +2,9 @@
   background: $col_antiflash_white;
   box-shadow: 0px 2px 10px 5px rgba(0,0,0, 0.1);
   height: 80px;
+  width: 100%;
+  margin: 0;
+
 
   &__logo {
     width: 100px;
@@ -15,7 +18,9 @@
     display: inline-block;
   }
 
-    // .navbar-header {
-    //   height: 80px;
-    // }
+  .container {
+    @extend %contained;
+    padding: 0;
+    width: 100%;
+  }
 }

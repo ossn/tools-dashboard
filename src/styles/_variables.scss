@@ -4,7 +4,18 @@ $proxima: 'Montserrat', 'Muli', sans-serif;
 $zilla:  'Zilla Slab', serif;
 $zilla-hightlited: 'Zilla Slab Highlight', cursive;
 
-// setup defaults
+// containments
+$desktop_paddings: 130px;
+$distance_from_top: 80px;
+$distance_from_bottom: 110px;
+
+// breakpoints
+$tablet: 630px;
+$tablet-large: 768px;
+$desktop: 1024px;
+$desktop-large: 1241px;
+
+// setup default component
 $text_typography: $proxima;
 $text_color: $col_dark_gray;
 

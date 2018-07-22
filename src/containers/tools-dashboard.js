@@ -16,6 +16,7 @@ export default class ToolsDashboard extends React.Component  {
     // write the  media queries and appearence settings
     const sizes = [
       {columns: 1, gutter: 10},
+      {mq: '630px', columns: 2, gutter: 15},
       {mq: '768px', columns: 2, gutter: 15},
       {mq: '1024px', columns: 3, gutter: 20}
     ];
@@ -53,7 +54,7 @@ export default class ToolsDashboard extends React.Component  {
     });
 
     return (
-      <div id="tools-dashboard-container">
+      <div id="tools-dashboard-container" className="dashboard">
         {content}
       </div>
     );

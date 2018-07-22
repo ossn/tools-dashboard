@@ -1,0 +1,5 @@
+.dashboard {
+  @extend %contained;
+  margin-top: $distance_from_top;
+  max-width: 100%;
+}
