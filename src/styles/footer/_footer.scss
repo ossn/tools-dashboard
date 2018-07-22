@@ -1,0 +1,28 @@
+@import './../text/_text.scss';
+
+.footer {
+  @extend %text;
+  @extend %text--white;
+  @extend %text--small;
+
+  width: 100%;
+  background-color: $col_charcoal;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding-top: 35px;
+  padding-bottom: 30px;
+
+  &__logo-wrapper {
+    max-width: 100px;
+  }
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__text  {
+    @extend %text--right;
+    max-width: 220px;
+  }
+}
