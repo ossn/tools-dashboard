@@ -1,13 +1,29 @@
 .navigation-bar {
   background: $col_antiflash_white;
   box-shadow: 0px 2px 10px 5px rgba(0,0,0, 0.1);
-  height: 80px;
+  height: 160px;
   width: 100%;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__container {
+    @extend %contained;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo-link {
+    order: 1;
+    flex-grow: 2;
+  }
 
   &__logo {
     width: 100px;
+    display: block;
   }
 
   &__brand-text {
@@ -16,11 +32,48 @@
     font-family: $zilla;
     margin-top: 2px;
     display: inline-block;
+    font-size: 17px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
-  .container {
-    @extend %contained;
-    padding: 0;
-    width: 100%;
+  &__search {
+    display: inline-block;
+    margin-right: 20px;
+    max-height: 44px;
+    width: 270px;
+    order: 3;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__user-profile {
+    display: inline-block;
+    order: 2;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+
+    &__logo-link {
+      order: 1;
+    }
+
+    &__search {
+      order: 2;
+      margin-top: 0;
+      margin-right: 20px;
+    }
+
+    &__user-profile {
+      order: 3;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__search {
+      margin-right: 40px;
+    }
   }
 }
