@@ -8,8 +8,21 @@ import contentData from './../content';
 
 export default class ToolsDashboard extends React.Component  {
 
+  constructor() {
+    super();
+    this.state = {
+
+    }
+  }
+
   componentDidMount() {
     this.addBricks();
+  }
+
+  componentDidUpdate() {
+    if (this.state.bricks) {
+      this.state.bricks.resize(true).pack();
+    }
   }
 
   addBricks() {
@@ -32,11 +45,24 @@ export default class ToolsDashboard extends React.Component  {
         .resize(true)     // bind resize handler
         .pack()           // pack initial items
     });
+
+    this.setState({bricks: bricks});
   }
 
   render() {
 
-    const content = contentData.map((item, i)=>{
+    const filter = this.props.filter || '';
+    const all = contentData;
+    let selected = [];
+    if (filter.length > 0) {
+      selected = all.filter((item)=>{
+        return item.title.indexOf(filter) > -1;
+      });
+    } else {
+      selected = all;
+    }
+
+    const content = selected.map((item, i)=>{
 
       const iconBundle = {
         alt: item.icon.alt,
@@ -53,9 +79,16 @@ export default class ToolsDashboard extends React.Component  {
       );
     });
 
+    const extraClasses = content.length === 0 ? 'dashboard__message--shown' : '';
+
     return (
-      <div id="tools-dashboard-container" className="dashboard">
-        {content}
+      <div className="dashboard__wrapper">
+        <div className={`dashboard__message ${extraClasses}`}>
+            No card found
+        </div>
+        <div id="tools-dashboard-container" className="dashboard">
+          {content}
+        </div>
       </div>
     );
   }

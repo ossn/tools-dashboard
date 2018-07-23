@@ -17,7 +17,10 @@ export default class NavigationBar extends React.Component  {
               </a>
           </div>
             <div className="navigation-bar__search">
-              <SearchTool />
+              <SearchTool
+                updateSearch={(event)=>this.props.updateSearch(event)}
+                searchString={this.props.searchString}
+              />
             </div>
             <div  className="navigation-bar__user-profile">
               <UserProfileTeaser />

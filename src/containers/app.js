@@ -5,12 +5,25 @@ import Footer from './footer';
 
 
 export default class App extends React.Component  {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchString: '',
+    };
+  }
+
+  updateStr = (event)=>{this.setState({searchString: event.target.value});}
+
   render() {
     return(
       <div className="app">
-          <NavigationBar />
+          <NavigationBar
+            updateSearch={this.updateStr}
+            searchString={this.state.searchString}
+           />
           <div className="app__container">
-            <ToolsDashboard />
+            <ToolsDashboard filter={this.state.searchString}/>
           </div>
           <Footer />
       </div>

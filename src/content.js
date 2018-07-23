@@ -1,6 +1,6 @@
 const content = [
   {
-    title: 'this is a title 1',
+    title: 'this is a title 1 one',
     link: 'https://google.com',
     body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
@@ -14,7 +14,7 @@ const content = [
     }
   },
   {
-    title: 'this is a title 2',
+    title: 'this is a title 2 one',
     link: 'https://google.com',
     body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
@@ -25,7 +25,7 @@ const content = [
     }
   },
   {
-    title: 'this is a title 3',
+    title: 'this is a title 3 match',
     link: 'https://google.com',
     body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
@@ -41,7 +41,7 @@ const content = [
     }
   },
   {
-    title: 'this is a title 4',
+    title: 'this same is a title 4 match',
     link: 'https://google.com',
     body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
     posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
@@ -60,6 +60,30 @@ const content = [
     docendi cotidieque. Sed ei tota fabulas vivendo, justo molestie vim in.
     Sit ut sale nonumes legendos, dicam homero soluta at mei. Sed ei tota
     fabulas vivendo, justo molestie vim in.`,
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
+  },
+  {
+    title: 'this is a title 6',
+    link: 'https://google.com',
+    body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
+    posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
+    docendi cotidieque. Sed ei tota fabulas vivendo, justo molestie vim in.
+    Sit ut sale nonumes legendos, dicam homero soluta at mei.`,
+    icon: {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
+        alt: 'icon'
+    }
+  },
+  {
+    title: 'this same is a title 7',
+    link: 'https://google.com',
+    body: `Lorem ipsum dolor sit amet, cu vide propriae interpretaris sed,
+    posse placerat dissentiet ut ius. Ei quo graecis elaboraret. Ex eum legere
+    docendi cotidieque. Sed ei tota fabulas vivendo, justo molestie vim in.
+    Sit ut sale nonumes legendos, dicam homero soluta at mei.`,
     icon: {
         src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg',
         alt: 'icon'
