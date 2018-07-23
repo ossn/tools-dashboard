@@ -10,9 +10,7 @@ export default class ToolsDashboard extends React.Component  {
 
   constructor() {
     super();
-    this.state = {
-
-    }
+    this.state = {}
   }
 
   componentDidMount() {
@@ -79,14 +77,15 @@ export default class ToolsDashboard extends React.Component  {
       );
     });
 
-    const extraClasses = content.length === 0 ? 'dashboard__message--shown' : '';
+    const messageExtraClasses = content.length === 0 ? 'dashboard__message--shown' : '';
+    const dashboardExtraClasses = content.length === 0 ? 'dashboard--shrink' : '';
 
     return (
       <div className="dashboard__wrapper">
-        <div className={`dashboard__message ${extraClasses}`}>
+        <div className={`dashboard__message ${messageExtraClasses}`}>
             {`No card matches "${this.props.filter}"`}
         </div>
-        <div id="tools-dashboard-container" className="dashboard">
+        <div id="tools-dashboard-container" className={`dashboard ${dashboardExtraClasses}`}>
           {content}
         </div>
       </div>

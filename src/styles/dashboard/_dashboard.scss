@@ -20,4 +20,8 @@
   &__message--shown {
     display: block;
   }
+
+  &--shrink {
+    max-height: 500px;
+  }
 }
