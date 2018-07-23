@@ -2,4 +2,19 @@
   @extend %contained;
   margin-top: $distance_from_top;
   max-width: 100%;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__message {
+    @extend %title;
+    display: none;
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  &__message--shown {
+    display: block;
+  }
 }
