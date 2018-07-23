@@ -22,9 +22,6 @@ export default class NavigationBar extends React.Component  {
                 searchString={this.props.searchString}
               />
             </div>
-            <div  className="navigation-bar__user-profile">
-              <UserProfileTeaser />
-            </div>
           </div>
         </div>
     );

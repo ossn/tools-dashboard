@@ -17,7 +17,6 @@
   }
 
   &__logo-link {
-    order: 1;
     flex-grow: 2;
     display: inline-block;
   }
@@ -40,13 +39,9 @@
 
   &__search {
     display: inline-block;
-    margin-right: 20px;
     max-height: 44px;
     width: 270px;
-    order: 3;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: 0;
     width: 100%;
   }
 
@@ -58,19 +53,9 @@
   @media screen and (min-width: $tablet) {
     height: 80px;
 
-    &__logo-link {
-      order: 1;
-    }
-
     &__search {
-      order: 2;
       margin-top: 0;
-      margin-right: 40px;
       width: 270px;
-    }
-
-    &__user-profile {
-      order: 3;
     }
   }
 }
