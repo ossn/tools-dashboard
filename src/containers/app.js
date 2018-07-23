@@ -13,7 +13,11 @@ export default class App extends React.Component  {
     };
   }
 
-  updateStr = (event)=>{this.setState({searchString: event.target.value});}
+  updateStr = (event)=>{
+    if (event.target.value.length < 500) {
+      this.setState({searchString: event.target.value});
+    }
+  }
 
   render() {
     return(

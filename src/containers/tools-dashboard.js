@@ -84,7 +84,7 @@ export default class ToolsDashboard extends React.Component  {
     return (
       <div className="dashboard__wrapper">
         <div className={`dashboard__message ${extraClasses}`}>
-            No card found
+            {`No card matches "${this.props.filter}"`}
         </div>
         <div id="tools-dashboard-container" className="dashboard">
           {content}
