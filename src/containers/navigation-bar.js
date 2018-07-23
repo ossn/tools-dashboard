@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchTool from './../components/search-tool';
-import UserProfileTeaser from './../components/user-profile-teaser';
 import osssnLogo from './../images/ossn_logo.png';
 
 
